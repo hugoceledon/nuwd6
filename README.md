@@ -5,7 +5,7 @@
 <hr><hr><br>
 
 <div align="center">
-  <img src="res/INFO.png" width="500" height="500">
+  <img src="img/seeker.png" width="500" height="500">
 </div>
 
 <div align="center">
