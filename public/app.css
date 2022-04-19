@@ -42,7 +42,9 @@ div.lista {
   margin-top: 1em;
 }
 
-.select-wrapper {
-  width: 50%;
-  margin: 0 auto !important;
+select{
+	width: 100%;
+	height: 80%;
+	display: flex;
+  flex-flow: row wrap;
 }

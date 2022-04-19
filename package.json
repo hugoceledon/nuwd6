@@ -1,0 +1,23 @@
+{
+  "name": "propertyseeker",
+  "version": "1.0.0",
+  "description": "Buscador de propiedades para curso en NextU.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoceledon/nuwd6.git"
+  },
+  "author": "hugoceledon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugoceledon/nuwd6/issues"
+  },
+  "homepage": "https://github.com/hugoceledon/nuwd6#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
