@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "d52ee7ce-85f1-40be-aad9-ac462d683092",
+		"name": "nuwd6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getPrices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/seeker/prices",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"seeker",
+						"prices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTypes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/seeker/types",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"seeker",
+						"types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/seeker/cities",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"seeker",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProperties",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/seeker",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"seeker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "minnorSearch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Ciudad",
+							"value": "New York",
+							"type": "text"
+						},
+						{
+							"key": "Tipo",
+							"value": "Apartamento",
+							"type": "text"
+						},
+						{
+							"key": "PrecioMin",
+							"value": "82000",
+							"type": "text"
+						},
+						{
+							"key": "PrecioMax",
+							"value": "83000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/seeker",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"seeker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fullSearch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/seeker",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"seeker"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
