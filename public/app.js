@@ -91,16 +91,18 @@
               renderProps: function(data){
                 var self = this
                 self.$propList.empty()
-                self._renderProp()
+                for (let i = 0; i < data.length; i++) {
+                  self._renderProp(data[i])
+                }
               },
-              _renderProp: function(){
+              _renderProp: function(prop){
                 var self = this
-                var property = self.propTemplate.replace(':ADDR:', 'Calle 1')
-                                  .replace(':CITY:', 'Calle 1')
-                                  .replace(':PHONE:', '12348712841')
-                                  .replace(':ZIPCODE:', '1234567')
-                                  .replace(':PRICE:', '$1200')
-                                  .replace(':TYPE:', 'Casa')
+                var property = self.propTemplate.replace(':ADDR:', prop.Direccion)
+                                  .replace(':CITY:', prop.Ciudad)
+                                  .replace(':PHONE:', prop.Telefono)
+                                  .replace(':ZIPCODE:', prop.Codigo_Postal)
+                                  .replace(':PRICE:', prop.Precio)
+                                  .replace(':TYPE:', prop.Tipo)
                 self.$propList.append(property)
               },
               setSearch: function(){
